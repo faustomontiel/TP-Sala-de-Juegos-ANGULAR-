@@ -33,3 +33,18 @@ cursor: pointer;
 background-color: #555;
 color: white;
 }
+
+nav{
+    background: #2A2C3F;
+    margin-block-end: 50px;
+}
+
+button,a
+{
+    margin:1px 1px 1px 10px; 
+}
+
+img{
+    height: 60px;
+    margin: 0px 150px 0px;
+}

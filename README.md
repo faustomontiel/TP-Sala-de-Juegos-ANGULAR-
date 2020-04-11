@@ -1,5 +1,5 @@
-# TP-Sala-de-Juegos-ANGULAR-
+# Sala de Juegos!
 Trabajo práctico obligatorio para la promoción directa
 
-# https://octaviovillegas.github.io/TP-Sala-de-Juegos-ANGULAR-/.
+# https://saladejuegosmontiel.herokuapp.com/
 

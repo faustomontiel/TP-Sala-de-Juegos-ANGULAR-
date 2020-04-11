@@ -1,12 +1,21 @@
-<div class="panel panel-default">
-  <div class="hero-text">
-      <h1 style="font-size:50px">Sala de Juegos</h1>
-      <p>Octavio villegas</p>
-      <a href="https://github.com/octaviovillegas"target="_blank">en GitHub <i class="fa fa-github"></i></a>
-      <a  routerLink="/QuienSoy" >Quien Soy? <i class="fa fa-user"></i></a>
-  </div>
-  <ul class="nav navbar-nav navbar-right">
-          <li><a routerLink="/Registro"><span class="glyphicon glyphicon-user"></span>Registrarse</a></li>
-          <li><a  routerLink="/Login"><span class="glyphicon glyphicon-log-in"></span> Ingresar</a></li>
-  </ul>
-</div>
+  <nav class="navbar navbar-expand-lg navbar-light ">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+     <!-- <a class="navbar-brand" style="margin: 0px 150px 0px" href="#">Sala de Juegos</a> --> 
+     <a routerLink="/Principal"><img src="./assets/imagenes/logo_sala_.png" class="media-object imagenDeMenu" ></a>
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a  class="nav-item nav-link" routerLink="/QuienSoy">Quien Soy? <i class="fa fa-user"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-item nav-link" href="https://github.com/faustomontiel"target="_blank">en GitHub <i class="fa fa-github"></i></a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+          <button routerLink="/Registro" class="btn btn-outline-success my-2 my-sm-1" type="submit">Registrarse</button> 
+          <button routerLink="/Login" class="btn btn-outline-success my-2 my-sm-1" type="submit">Ingresar</button>
+      </form>
+    </div>
+  </nav>
