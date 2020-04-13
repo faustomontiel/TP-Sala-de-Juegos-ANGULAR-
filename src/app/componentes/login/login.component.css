@@ -50,10 +50,16 @@ img.avatar {
 
 .container {
     padding: 16px;
+    
+}
+.divcont {
+    padding: 16px;
+    width: 500px;
+    height: 400px;
 }
 
 span.psw {
-    float: right;
+    float: center;
     padding-top: 16px;
 }
 

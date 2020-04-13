@@ -1,3 +1,9 @@
+.bodycont{
+    width: 1200px;
+    height: 400px;
+    margin: 0 auto;
+}
+
 input[type=text], input[type=password] {
     width: 100%;
     padding: 12px 20px;
@@ -77,6 +83,7 @@ button {
     clear: both;
     display: table;
 }
+
 
 /* Change styles for cancel button and signup button on extra small screens */
 @media screen and (max-width: 300px) {

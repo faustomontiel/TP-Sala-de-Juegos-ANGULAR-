@@ -1,0 +1,14 @@
+nav{
+    background: #2A2C3F;
+    margin-block-end: 50px;
+}
+
+button,a
+{
+    margin:1px 1px 1px 10px; 
+}
+
+img{
+    height: 55px;
+    margin: 0px 100px 0px;
+}
