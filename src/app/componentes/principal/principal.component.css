@@ -141,3 +141,24 @@ section .section-title {
     height: 120px;
     border-radius: 50%;
 }
+
+.cardbackimgjuegos{
+    background-image: url('/assets/imagenes/games.jpg');
+    background-position: center;
+}
+
+
+.cardbackimglistado{
+    background-image: url('/assets/imagenes/listado.jpg');
+    background-position: center;
+}
+
+.cardbackimgconfig{
+    background-image: url('/assets/imagenes/Configuracion.jpg');
+    background-position: center;
+}
+
+.cardbackimgjugadores{
+    background-image: url('/assets/imagenes/jugadores.jpg');
+    background-position: center;
+}
