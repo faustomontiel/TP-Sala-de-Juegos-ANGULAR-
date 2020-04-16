@@ -1,6 +1,6 @@
 nav{
     background: #2A2C3F;
-    margin-block-end: 50px;
+    margin-block-end: 20px;
 }
 
 button,a
@@ -10,5 +10,5 @@ button,a
 
 img{
     height: 55px;
-    margin: 0px 100px 0px;
+    margin: 0px 50px 0px;
 }
