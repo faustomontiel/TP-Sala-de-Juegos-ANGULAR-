@@ -2,7 +2,7 @@
 <!--app-menu></app-menu-->
 <!-- index.html -->
 
-
+<div>
 <form name="juego">
 <ul>
    <li>
@@ -21,6 +21,7 @@
     Respuesta: <input [(ngModel)]="nuevoJuego.numeroIngresado" placeholder="ingrese numero" name="numeroIngresado" type="text" class="form-control" style="width:50%"/>
      
    </li>
+
   <li>
     <h2 [hidden]="ocultarVerificar" ><button (click)="verificar()" class="btn btn-success btn-lg">Verificar {{Tiempo}} </button></h2>
   </li>
@@ -36,3 +37,4 @@
 </ul>
 
 </form>
+</div>
