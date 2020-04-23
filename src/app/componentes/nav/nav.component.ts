@@ -29,7 +29,7 @@ export class NavComponent implements OnInit {
 
   terminarSession(){
     sessionStorage.removeItem('login');
-    this.router.navigate(['/Principal']);
+    this.router.navigate(['/']);
     window.location.reload();
 
   }
