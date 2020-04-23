@@ -29,8 +29,9 @@ export class NavComponent implements OnInit {
 
   terminarSession(){
     sessionStorage.removeItem('login');
-    this.router.navigate(['/']);
-    window.location.reload();
+//    this.router.navigate(['/']);
+  //  window.location.reload();
+      window.location.href = "https://saladejuegosmontiel.herokuapp.com/";
 
   }
 
