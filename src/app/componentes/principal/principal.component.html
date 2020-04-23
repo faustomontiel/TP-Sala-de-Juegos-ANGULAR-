@@ -1,4 +1,4 @@
-<app-cabecera> </app-cabecera>
+<app-nav> </app-nav>
 <!--
 <div class="container" >
     <div class="row">  
@@ -51,7 +51,7 @@
                       <div class="card-body text-center mt-4">
                           <h4 class="card-title">Juegos</h4>
                           <p class="card-text">El método lúdico es un conjunto de estrategias diseñadas para crear un ambiente de armonía en los estudiantes que están inmersos en el proceso de aprendizaje. Este método busca que los alumnos se apropien de los temas impartidos por los docentes utilizando el juego.</p>
-                          <button routerLink="/Juegos">Jugar</button>
+                          <button class="btn btn-success" (click)="verifLoginJuegos()" >Jugar</button>
                       </div>
                   </div>
               </div>
@@ -73,7 +73,7 @@
                     <div class="card-body text-center mt-4">
                         <h4 class="card-title">Listado de resultados</h4>
                         <p class="card-text">Los listados de los resultados con ordenamiento y busqueda.</p>
-                        <button routerLink="/Listado">Listado</button>
+                        <button class="btn btn-success" (click)="verifLoginListado()">Listado</button>
                     </div>
                 </div>
             </div>
@@ -84,7 +84,7 @@
 
 <div class="btn-chat" id="livechat-compact-container" style="visibility: visible; opacity: 1;">
         <div class="btn-holder">
-            <a onclick="alert('No desarrollado todavia!')" href="#" class="link">Soporte 24/7</a>
+            <a class="nav-item nav-link" href="https://github.com/faustomontiel"target="_blank">en GitHub <i class="fa fa-github"></i></a>
         </div>
 </div>
 
@@ -103,7 +103,7 @@
                     <div class="card-body text-center mt-4">
                         <h4 class="card-title">Configuraciones</h4>
                         <p class="card-text">Ajustes de la aplicacion y los métodos de autentificación</p>
-                        <button routerLink="/Listado">Configuraciones</button>
+                        <button class="btn btn-success" (click)="verifLoginConfig()">Configuraciones</button>
                     </div>
                 </div>
             </div>
@@ -125,7 +125,7 @@
                     <div class="card-body text-center mt-4">
                         <h4 class="card-title">Jugadores</h4>
                         <p class="card-text">Listado de jugadores</p>
-                        <button routerLink="/Jugadores">Jugadores</button>
+                        <button class="btn btn-success" (click)="verifLoginJugadores()">Jugadores</button>
                     </div>
                 </div>
             </div>

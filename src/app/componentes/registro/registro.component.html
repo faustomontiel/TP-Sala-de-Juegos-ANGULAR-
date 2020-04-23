@@ -1,39 +1,48 @@
-<app-cabecera> </app-cabecera>
+<app-nav> </app-nav>
 
-<body class="bodycont">
-  <div class="jumbotron">
-    <h2 id="terminos">Terminos y condiciones</h2>
+<body class="bodycont" style="border-radius: 50px">
+  <div class="jumbotron" style="border-radius: 50px;background-image: url('/assets/imagenes/jumbotronjpg.jpg');
+  background-position: center;">
+    <h2 id="terminos" style="text-align: center">Terminos y condiciones</h2>
     <p>El Gobierno de la República Argentina (en adelante el “Gobierno Nacional”) no es responsable por los daños y perjuicios que puedan surgir, incluyendo, sin límite, daños, pérdidas o gastos directos, indirectos, que surjan en relación con el uso de los Activos Digitales o la imposibilidad de uso, en relación con cualquier falla en el vencimiento, error, omisión, interrupción, defecto, demora en la operación o transmisión, virus de computadora o falla del sistema de línea, aún en el caso de que el Gobierno Nacional o sus representantes fueran informados sobre la posibilidad de dichos daños, pérdidas o gastos.</p>
     <p>El Gobierno Nacional no controla ni garantiza la ausencia de virus ni de otros elementos en los contenidos que puedan producir alteraciones en su sistema informático (software y hardware) o en los documentos electrónicos y ficheros almacenados en su sistema informático.</p>
     <p>El Gobierno Nacional no puede garantizar que la transmisión de información por parte de los Usuarios sea completamente segura. El Usuario asume este riesgo.</p>
-   
+   <div class="container" >
+    <button class="btn btn-success" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Acepto</button>
+    <button  class="btn btn-danger"  routerLink="/Principal" style="width:auto;">No acepto</button>  
   </div>
-  <strong><p>No leer lo anterior, es solo un ejemplo sacado de https://www.argentina.gob.ar/terminos-y-condiciones </p></strong>
-  <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Acepto</button>
-  <button  class="cancelbtn"  routerLink="/Principal" style="width:auto;">No acepto</button>
-  <div id="id01" class="modal">
-    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
-    <form class="modal-content animate" >
-      <div class="container">
-        <label><b>Email</b></label>
-        <input type="text" placeholder="Ingresa tu correo" name="email" required>
-  
-        <label><b>Clave</b></label>
-        <input type="password" placeholder="Aca la clave" name="psw" required>
-  
-        <label><b>Repita la clave</b></label>
-        <input type="password" placeholder="Aca repeti la misa clave  de arriba" name="psw-repeat" required>
-        <input type="checkbox" checked="checked">Recordar mis datos
-        <p>creando la cuenta aceptando los<a  onclick="document.getElementById('id01').style.display='none'"  >Terminos y condiciones</a>.</p>
-  
-        <div class="clearfix">
-          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Me arrepenti</button>
-          <button type="submit" class="signupbtn">Registrarme</button>
+  </div>
+
+  <div class="modal" id="id01" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Registro</h5>
+        </div>
+        <div class="modal-body">
+          <form class="modal-content animate" >
+            <div class="container">
+              <label><b>Email</b></label>
+              <input type="text" placeholder="Ingresa tu correo" name="email" required>
+        
+              <label><b>Clave</b></label>
+              <input type="password" placeholder="Aca la clave" name="psw" required>
+        
+              <label><b>Repita la clave</b></label>
+              <input type="password" placeholder="Aca repeti la misa clave  de arriba" name="psw-repeat" required>
+              <input type="checkbox" checked="checked">Recordar mis datos
+              <p>creando la cuenta aceptando los<a  onclick="document.getElementById('id01').style.display='none'"  >Terminos y condiciones</a>.</p>
+        
+              <div class="clearfix">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="btn btn-danger">Me arrepenti</button>
+                <button type="submit"class="btn btn-success">Registrarme</button>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
-    </form>
+    </div>
   </div>
-  
   <script>
   // Get the modal
   var modal = document.getElementById('id01');

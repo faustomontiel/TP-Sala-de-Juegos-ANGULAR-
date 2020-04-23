@@ -21,8 +21,20 @@
     </div>
   </div>
 </div-->
-<app-cabecera> </app-cabecera>
+<app-nav> </app-nav>
 
+<form   class="form">
+  <h2>Login</h2>
+  <p type="Email:"><input placeholder="Email" type="text" [(ngModel)]="usuario" name="email"></p>
+  <p type="password:"><input placeholder="Password" type="password" [(ngModel)]="clave" name="password"></p>
+  <button (click)="Entrar()">Ingresar</button>
+  <div>
+    <span class="fa fa-phone"></span>Soporte:
+    <span class="fa fa-envelope-o"></span> faustomontiel98@gmail.com
+  </div>
+</form>       
+
+<!--
  <div class="container divcont" align="center">
   <div class="jumbotron" style="padding:50px;">
     <form action="return true;">
@@ -57,4 +69,4 @@
      
     </form>
   </div>
-</div>
+</div>-->

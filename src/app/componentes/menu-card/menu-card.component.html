@@ -1,4 +1,4 @@
-<div class="container" >
+<!--<div class="container" >
     <div class="card">
       <img class="img-thumbnail"   src="./assets/imagenes/cerebro.jpg" alt="Avatar" style="width:100%">
       <h1>Velocidad y agilidad aritmética </h1>
@@ -37,4 +37,41 @@
       <a href="#"><i class="fa fa-facebook"></i></a> 
       <p>           <button class="button"  (click)="Juego('Adivina')">Jugar</button></p>
     </div>
+  </div>
+-->
+  <div class="container" style="margin-top: 5%">
+    <div class="row">  
+        <div class="card col-md-3 col-sm-2 " style="width: 18rem;">
+            <img (click)="Juego('Agilidad')" src="./assets/imagenes/cerebro.jpg" alt="Card image cap" class="card-img-top" >
+            <div class="card-body">
+              <h5 class="card-title">Velocidad y agilidad aritmética</h5>
+              <p class="card-text">Juego de agilidad mental</p>
+            </div>
+        </div>
+
+        <div class="card col-md-3 col-sm-2 " style="width: 18rem;">   
+            <div class="card-body">
+              <h5 class="card-title">Piedra Papel o Tijera</h5>
+              <p class="card-text">Juega contra la máquina</p>
+            </div>
+            <img (click)="Juego('PPT')" src="./assets/imagenes/ppt.jpg" alt="Card image cap" class="card-img-top" >
+        </div>
+
+        <div class="card col-md-3 col-sm-2 " style="width: 18rem;">
+            <img routerLink="/Juegos" src="./assets/imagenes/tragamonedas.jpg" alt="Card image cap" class="card-img-top" >
+            <div class="card-body">
+              <h5 class="card-title">Tragamonedas</h5>
+              <p class="card-text">Intenta hasta tener todos iguales</p>
+            </div>
+        </div>
+  
+        <div class="card col-md-3 col-sm-2 " style="width: 18rem;">
+           
+            <div class="card-body">
+              <h5 class="card-title">Adivina el número secreto</h5>
+              <p class="card-text">Juega de estrategia</p>
+            </div>
+            <img (click)="Juego('Adivina')" src="./assets/imagenes/adivina.png" alt="Card image cap" class="card-img-top" >
+        </div>
+    </div> 
   </div>
