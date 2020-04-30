@@ -54,6 +54,8 @@ import { AgmCoreModule } from '@agm/core';
 import { InputJugadoresComponent } from './componentes/input-jugadores/input-jugadores.component';
 import { SexoPipe } from './pipes/sexo.pipe';
 import { NavComponent } from './componentes/nav/nav.component';
+import { TragamonedasComponent } from './componentes/tragamonedas/tragamonedas.component';
+import { BilleteraComponent } from './componentes/billetera/billetera.component';
 
 @NgModule({
   declarations: [
@@ -80,7 +82,9 @@ import { NavComponent } from './componentes/nav/nav.component';
     JugadoresListadoComponent,
     InputJugadoresComponent,
     SexoPipe,
-    NavComponent
+    NavComponent,
+    TragamonedasComponent,
+    BilleteraComponent
   ],
   imports: [
     BrowserModule,
