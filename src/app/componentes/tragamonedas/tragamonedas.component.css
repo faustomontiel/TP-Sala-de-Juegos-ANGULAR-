@@ -8,6 +8,11 @@ div{
     margin-left:250px;
     margin-right:0px;
     border-radius: 50px 20px;
+    outline:none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
 }
 
 

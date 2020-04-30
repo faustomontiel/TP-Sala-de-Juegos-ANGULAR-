@@ -48,10 +48,11 @@ export class TragamonedasComponent implements OnInit {
         {
           var suma = +localStorage.getItem("monedas");
           this.monedas = suma + 50;
-          this.mensajeMonedas = "GANASTE 20 MONEDAS!!";
+          this.mensajeMonedas = "GANASTE 50 MONEDAS!!";
           localStorage.setItem("monedas", this.monedas.toString());
           $('#monedasID').text(this.monedas.toString());
           $('#mensajeID').text(this.mensajeMonedas);
+          $('#mensajeID').css("background-color", "green");
         }
         else if(slot1R == slot2R || slot2R == slot3R || slot1R == slot3R ){
           var suma = +localStorage.getItem("monedas");
@@ -60,17 +61,22 @@ export class TragamonedasComponent implements OnInit {
           localStorage.setItem("monedas", this.monedas.toString());
           $('#monedasID').text(this.monedas.toString());
           $('#mensajeID').text(this.mensajeMonedas);
-          
+          $('#mensajeID').css("background-color", "green");
+          //$("p").css("background-color", "yellow");
         }else{
           var resta = +localStorage.getItem("monedas");   
           this.monedas = resta - 20;
           if(resta>=20){
             this.mensajeMonedas = "Perdiste 20 MONEDAS!";
-          }else if(resta<0){
+            $('#mensajeID').css("background-color", "red");
+          }else if(resta=0){
             this.monedas = 20;
-            this.mensajeMonedas = "Te quedaste sin monedas, pero te regalamos 20 más!";
+            this.mensajeMonedas = "No tienes monedas, pero te regalamos 20";
+            $('#mensajeID').css("background-color", "green");
           }else{
-            this.mensajeMonedas = "Suerte la proxima!";
+            this.monedas = 20;
+            this.mensajeMonedas = "No tienes monedas, pero te regalamos 20";
+            $('#mensajeID').css("background-color", "green");  
           }
           localStorage.setItem("monedas", this.monedas.toString());
           $('#monedasID').text(this.monedas.toString());
