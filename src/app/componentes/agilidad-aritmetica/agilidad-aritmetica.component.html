@@ -1,21 +1,21 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <!--app-menu></app-menu-->
 <!-- index.html -->
-<div class="jumbotron" style="background-color: rgb(69, 50, 136)">
+<div class="jumbotron" style="background-image: url('/assets/imagenes/brain.jpg');margin-top: 10%">
  <div class="row"> 
   <div style="margin-left: 20px">
     <p>Primer número:</p> 
-    <input [(ngModel)]="nuevoJuego.numeroIngresado"  name="numeroIngresado" type="text"  style="width:30%;" readonly/>
+    <input [(ngModel)]="nuevoJuego.numberOne"  name="numeroUno" type="text"  style="width:30%;" readonly/>
   </div>
 
   <div style="margin-left: 20px">
     <p>Operador:</p>
-     <input [(ngModel)]="nuevoJuego.numeroIngresado"  name="numeroIngresado" type="text"  style="width:30%;" readonly/>
+     <input [(ngModel)]="nuevoJuego.signo"  name="signo" type="text"  style="width:30%;" readonly/>
   </div>
   
  <div style="margin-left: 20px">
   <p>Segundo número:</p>
-   <input [(ngModel)]="nuevoJuego.numeroIngresado"  name="numeroIngresado" type="text"  style="width:30%;" readonly/>
+   <input [(ngModel)]="nuevoJuego.numberTwo"  name="numeroDos" type="text"  style="width:30%;" readonly/>
  </div>
     
   <div style="margin-left: 20px">
@@ -25,12 +25,15 @@
   <div style="margin-left: 20px">
     <h2 [hidden]="!ocultarVerificar"><button  (click)="NuevoJuego()"  class="btn btn-info btn-lg">Nuevo</button></h2>
     <h2 [hidden]="ocultarVerificar" ><button (click)="verificar()" class="btn btn-success btn-lg">Verificar {{Tiempo}} </button></h2>
-  </div>  
+  </div> 
+  <br>
+  <h3 id="h3gano" [hidden]="!nuevoJuego.gano" style="margin-left: 75%">Usted adivino el número!!</h3>
+  <h3 id="h3Nogano" [hidden]="nuevoJuego.gano"  style="margin-left: 75%">usted aún no gano </h3>
+
 </div>
  
-    <h2><p><i class="fa fa-spinner fa-spin"></i>Esperando numero...</p></h2>
+    <h2 style="margin-left: 65%" [hidden]="!this.esperando"><p><i class="fa fa-spinner fa-spin"></i>Esperando numero...</p></h2>
 
-    <h3 [hidden]="!nuevoJuego.gano">usted adivino el número</h3>
-    <h3 [hidden]="nuevoJuego.gano">usted aún no gano </h3>
+   
 
 </div>

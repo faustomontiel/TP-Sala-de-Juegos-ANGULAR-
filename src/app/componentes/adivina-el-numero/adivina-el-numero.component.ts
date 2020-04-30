@@ -14,6 +14,7 @@ export class AdivinaElNumeroComponent implements OnInit {
   Mensajes:string;
   contador:number;
   ocultarVerificar:boolean;
+  esperando:boolean;
  
   constructor() { 
     this.nuevoJuego = new JuegoAdivina();
@@ -33,6 +34,7 @@ export class AdivinaElNumeroComponent implements OnInit {
       
       this.enviarJuego.emit(this.nuevoJuego);
       this.MostarMensaje("Sos un Genio!!!",true);
+      $('#snackbar').css("background-color", "green");
       this.nuevoJuego.numeroSecreto=0;
 
     }else{
@@ -41,25 +43,32 @@ export class AdivinaElNumeroComponent implements OnInit {
       switch (this.contador) {
         case 1:
           mensaje="No, intento fallido, animo";
+          $('#snackbar').css("background-color", "red");   
           break;
           case 2:
           mensaje="No,Te estaras Acercando???";
+          $('#snackbar').css("background-color", "red");
           break;
           case 3:
           mensaje="No es, Yo crei que la tercera era la vencida.";
+          $('#snackbar').css("background-color", "red");
           break;
           case 4:
           mensaje="No era el  "+this.nuevoJuego.numeroIngresado;
+          $('#snackbar').css("background-color", "red");
           break;
           case 5:
           mensaje=" intentos y nada.";
+          $('#snackbar').css("background-color", "red");
           break;
           case 6:
           mensaje="Afortunado en el amor";
+          $('#snackbar').css("background-color", "red");
           break;
       
         default:
             mensaje="Ya le erraste "+ this.contador+" veces";
+            $('#snackbar').css("background-color", "red");
           break;
       }
       this.MostarMensaje("#"+this.contador+" "+mensaje+" ayuda :"+this.nuevoJuego.retornarAyuda());
