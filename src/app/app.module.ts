@@ -56,10 +56,9 @@ import { SexoPipe } from './pipes/sexo.pipe';
 import { NavComponent } from './componentes/nav/nav.component';
 import { TragamonedasComponent } from './componentes/tragamonedas/tragamonedas.component';
 import { BilleteraComponent } from './componentes/billetera/billetera.component';
-
+import { environment } from '../environments/environment';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireAuthModule } from 'angularfire2/auth';
-import {environment } from '../environments/environment';
 
 
 
@@ -97,11 +96,11 @@ import {environment } from '../environments/environment';
     FormsModule,
     RuteandoModule,
     HttpClientModule,
-    AngularFireModule.initializeApp(environment.firebaseConfig),
-    AngularFireAuthModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyB6f8x4IjRlesQ3oETc6BXYQHVRTOlY3Ys'
-    })
+    }),
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireAuthModule,
     // NgbModule.forRoot(MiRuteo),
     // importo el ruteo
     // RouterModule.forRoot(MiRuteo)
