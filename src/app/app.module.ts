@@ -57,6 +57,12 @@ import { NavComponent } from './componentes/nav/nav.component';
 import { TragamonedasComponent } from './componentes/tragamonedas/tragamonedas.component';
 import { BilleteraComponent } from './componentes/billetera/billetera.component';
 
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+import {environment } from '../environments/environment';
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -91,6 +97,8 @@ import { BilleteraComponent } from './componentes/billetera/billetera.component'
     FormsModule,
     RuteandoModule,
     HttpClientModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireAuthModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyB6f8x4IjRlesQ3oETc6BXYQHVRTOlY3Ys'
     })

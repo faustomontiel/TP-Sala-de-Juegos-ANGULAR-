@@ -25,10 +25,12 @@
 
 <form   class="form">
   <h2>Login</h2>
-  <p type="Email:"><input placeholder="Email" type="text" [(ngModel)]="usuario" name="email"></p>
-  <p type="password:"><input placeholder="Password" type="password" [(ngModel)]="clave" name="password"></p>
+  <p type="Email:"><input placeholder="Email" type="text" [(ngModel)]="jugador.usuario" name="email"></p>
+  <p type="password:"><input placeholder="Password" type="password" [(ngModel)]="jugador.clave" name="password"></p>
   <button (click)="Entrar()">Ingresar</button>
+    <label style="text-align: center;color: red;" >{{errorFire}}</label>
   <div>
+    
     <span class="fa fa-phone"></span>Soporte:
     <span class="fa fa-envelope-o"></span> faustomontiel98@gmail.com
   </div>
