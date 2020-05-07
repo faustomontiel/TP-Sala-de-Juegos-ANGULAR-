@@ -1,0 +1,41 @@
+<div class="jumbotron" style="background-image: url('/assets/imagenes/fondoppt.png')">
+    <div class="container" style="margin-top: 0%">
+        <div class="row">   
+              <div class="col-4" style="width: 18rem;">
+                    <img (click)="jugada(1)" src="./././assets/imagenes/piedra.jpg"  style="width: 150px;height: 150px;">
+              </div>
+              <div class="col-4" style="width: 18rem;">
+                    <img (click)="jugada(2)" src="./././assets/imagenes/papel.jpg" style="width: 150px;height: 150px;">
+                </div>
+                <div class="col-4" style="width: 18rem;">
+                    <img (click)="jugada(3)" src="./././assets/imagenes/tijera.jpg" style="width: 150px;height: 150px;">        
+                </div>  
+        </div> 
+     </div>
+     
+            <div class="row" style="margin-left: 700px;margin-right: 880px;margin-top: 10px;display: none;"  id="esperando" >
+                <label class="col-12">
+                    <p style="background-color: white"><i class="fa fa-spinner fa-spin" style="background-color: white">
+                        </i> Esperando que elija piedra papel o tijera</p>
+                </label>
+            </div>
+            <div class="col-6"style="margin-left: 700px;display: none;" id="resultado">
+              <br><br><br>
+              <div class="row">
+                <h5 style="background-color: white">Vos</h5>
+                <img class="imagenDeMenu" src={{imagenUsuario}}  style="width: 150px;height: 150px;"> 
+                <h5 style="background-color: white"> Maquina</h5><br>
+                <img class="imagenDeMenu" src={{imagenMaquina}} style="width: 150px;height: 150px;">
+              </div>    
+        </div>
+
+<div class="row">
+    <div style="margin-left: 800px;margin-top: 20px;"> 
+        <!--<button class="btnpalanca" (click)="Jugar()" ><img src="./assets/imagenes/palancabtn.png" ></button>--> 
+        <button [hidden]="enJuego" (click)="empezar()" class="btn button btn-success">Nuevo juego</button> 
+        <!--<div id="snackbar">{{Mensajes}}</div>-->
+        <div><p id="mensajeID" style="background-color: white"></p></div>
+    </div>
+</div>
+
+</div>

@@ -60,6 +60,7 @@ import { environment } from '../environments/environment';
 import { firebaseConfig } from '../environments/environment';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireAuthModule } from 'angularfire2/auth';
+import { PiedraPapelTijeraComponent } from './componentes/piedra-papel-tijera/piedra-papel-tijera.component';
 
 
 
@@ -90,7 +91,8 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
     SexoPipe,
     NavComponent,
     TragamonedasComponent,
-    BilleteraComponent
+    BilleteraComponent,
+    PiedraPapelTijeraComponent
   ],
   imports: [
     BrowserModule,
