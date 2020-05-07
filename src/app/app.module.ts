@@ -96,11 +96,11 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
     FormsModule,
     RuteandoModule,
     HttpClientModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireAuthModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyB6f8x4IjRlesQ3oETc6BXYQHVRTOlY3Ys'
     }),
-    AngularFireModule.initializeApp(environment.firebaseConfig),
-    AngularFireAuthModule,
     // NgbModule.forRoot(MiRuteo),
     // importo el ruteo
     // RouterModule.forRoot(MiRuteo)
